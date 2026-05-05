@@ -80,17 +80,19 @@ export const TitleBar = memo(function TitleBar({
         className="flex items-center gap-2 pl-3 flex-1 h-full"
         data-tauri-drag-region
       >
-        {/* Logo */}
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
-          <path d="M2 4l4 4-4 4" stroke={colors.accent} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M8 12h6" stroke={colors.accent} strokeWidth="2" strokeLinecap="round" />
-        </svg>
+        <img
+          src="/giis-logo.png"
+          alt="GiiS"
+          className="h-4 w-4 rounded-sm object-contain"
+          style={{ flexShrink: 0 }}
+          data-tauri-drag-region
+        />
         <span
           className="text-xs font-semibold tracking-wide"
           style={{ color: colors.accent }}
           data-tauri-drag-region
         >
-          VibeShell
+          GiiS Shell
         </span>
 
         {/* Session info */}
